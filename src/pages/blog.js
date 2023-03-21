@@ -10,6 +10,6 @@ const BlogPage = () => {
   )
 }
 
-export const Head = () => <Seo title="My Blog Posts" />
-
 export default BlogPage
+
+export const Head = () => <Seo title="My Blog Posts" />
