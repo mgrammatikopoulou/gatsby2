@@ -6,7 +6,8 @@ import {
   navLinks,
   navLinkItem,
   navLinkText,
-  navigation
+  navigation,
+  site-title
 } from './layout.module.css'
 
 
