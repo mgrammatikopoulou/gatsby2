@@ -5,13 +5,14 @@ import {
   heading,
   navLinks,
   navLinkItem,
-  navLinkText
+  navLinkText,
+  navigation
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
-      <nav>
+      <nav class="navigation">
         <ul className={navLinks}>
           <li className={navLinkItem}>
             <Link to="/" className={navLinkText}>

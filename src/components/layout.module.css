@@ -1,7 +1,11 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 1200px;
   font-family: sans-serif;
+}
+.navigation {
+	max-width: 1200px;
+	box-shadow: 0px 0px 5px 0px #88888800;
 }
 .heading {
   color: rebeccapurple;
@@ -16,4 +20,11 @@
 }
 .nav-link-text {
   color: black;
+  decoration: none;
+}
+.nav-link-text:active{
+	decoration: underline;
+}
+.nav-link-text:hover{
+	color: red;
 }
