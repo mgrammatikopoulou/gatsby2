@@ -6,15 +6,15 @@ module.exports = {
     siteUrl: `http://gatsby.bitmyjob.com/`,
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-sharp",
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: process.env.WPGRAPHQL_URL || `http://gatsby.bitmyjob.com/graphql`,
+       url: process.env.WPGRAPHQL_URL || `http://gatsby.bitmyjob.com/graphql`,
           },
         },
       },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     },
   ],
 }
