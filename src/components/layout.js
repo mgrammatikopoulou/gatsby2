@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { Link } from 'gatsby'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import {
   container,
@@ -46,4 +45,5 @@ const Layout = ({ pageTitle, children }) => {
     </div>
   )
 }
+
 export default Layout
