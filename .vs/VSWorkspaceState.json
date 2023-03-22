@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\blog",
     "\\src",
     "\\src\\components",
     "\\src\\pages"
   ],
-  "SelectedNode": "\\src\\images",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
