@@ -1,6 +1,9 @@
 import * as React from "react"
 import Layout from '../components/layout'
+import About from '/about'
 import { StaticImage } from 'gatsby-plugin-image'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 
@@ -13,6 +16,14 @@ const IndexPage = () => {
         src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large"
       />
     </Layout>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
