@@ -6,25 +6,16 @@
 })
 
 module.exports = {
-  siteMetadata: {
-    title: "Your Site Title Here",
-  },
+
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
     {
-      resolve: "gatsby-source-wordpress",
+      resolve: `gatsby-source-wordpress`,
       options: {
-        url: "http://gatsby.bitmyjob.com/graphql",
-        httpOptions: {
-            verify: false
-}
-        schema: {
-          perPage: 100,
-          requestConcurrency: 5,
-          previewRequestConcurrency: 2,
-        },
+          wordPressUrl: `http://gatsby.bitmyjob.com/`,
+        url: process.env.WPGRAPHQL_URL || `http://gatsby.bitmyjob.com/graphql/`,
       },
     },
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
   ],
 }
